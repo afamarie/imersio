@@ -1,0 +1,50 @@
+.swiper-pagination {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  z-index: 1;
+
+  @include vp-1199 {
+    bottom: 8px;
+  }
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 3px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid $color-default-white;
+  background-color: $color-default-white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px $color-default-black inset;
+  cursor: pointer;
+
+  &-active {
+    box-shadow: 0 0 0 2px $color-default-black inset;
+  }
+
+  @include vp-1199 {
+    margin: 2px;
+    width: 8px;
+    height: 8px;
+
+    &-active {
+      box-shadow: 0 0 0 1px $color-default-black inset;
+    }
+  }
+}
+
+.gallery .swiper {
+  padding-top: 40px;
+  padding-bottom: 25px;
+  background-color: $color-black-russian;
+}
+
+.gallery .swiper-pagination {
+  bottom: 100px;
+}

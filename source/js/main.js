@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import {Burger} from './modules/header/burger';
+import {StickyHeader} from './modules/header/sticky-header';
+import './modules/sliders/sliders';
 
 // ---------------------------------
 
@@ -18,9 +20,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
-    const form = new Form();
-    window.form = form;
-    form.init();
+    const burger = new Burger();
+    burger.init();
+    const header = new StickyHeader();
+    header.init();
   });
 });
 

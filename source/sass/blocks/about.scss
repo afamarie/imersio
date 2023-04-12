@@ -1,0 +1,97 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include vp-767 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.about__details {
+  padding: 33px 47px;
+  background-color: $color-black-russian;
+  color: $color-dark-grey;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  @include vp-767 {
+    padding: 20px 16px;
+
+    h3 {
+      text-align: center;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+}
+
+.about__contacts {
+  font-style: normal;
+}
+
+.about__link {
+  position: relative;
+  display: grid;
+  width: fit-content;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  grid-template-columns: min-content 1fr;
+  gap: 12px;
+  color: lighten($color-medium-orchid, 20%);
+  transition: color $trans-default;
+
+  &::after {
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background: linear-gradient(90deg, $color-medium-orchid 19%, $color-pink-flamingo 52%, transparent 86%);
+    background-size: 200%;
+    background-position: 100% 0;
+    content: "";
+    transition: all linear 0.3s;
+  }
+
+  @include hover-focus {
+    color: $color-medium-orchid;
+
+    &::after {
+      width: 100%;
+      background-position: 0 0;
+    }
+  }
+
+  @include vp-767 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about__link-icon {
+  align-self: center;
+  fill: currentcolor;
+}
