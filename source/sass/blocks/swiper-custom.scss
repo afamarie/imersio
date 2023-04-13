@@ -1,15 +1,9 @@
 .swiper-pagination {
   display: flex;
   position: absolute;
-  bottom: 10px;
   left: 0;
   right: 0;
   justify-content: center;
-  z-index: 1;
-
-  @include vp-1199 {
-    bottom: 8px;
-  }
 }
 
 .swiper-pagination-bullet {
@@ -23,9 +17,14 @@
   border-radius: 50%;
   box-shadow: 0 0 0 6px $color-default-black inset;
   cursor: pointer;
+  transition: box-shadow $trans-default;
 
   &-active {
     box-shadow: 0 0 0 2px $color-default-black inset;
+  }
+
+  @include hover-focus {
+    box-shadow: 0 0 0 6px $color-medium-orchid inset;
   }
 
   @include vp-1199 {
@@ -47,4 +46,27 @@
 
 .gallery .swiper-pagination {
   bottom: 100px;
+  z-index: 1;
+}
+
+.intro .swiper-pagination {
+  bottom: -40px;
+
+  @include vp-1199 {
+    bottom: -20px;
+  }
+}
+
+.intro .swiper-slide {
+  img {
+    opacity: 0.3;
+    transition: all 3s ease-in-out;
+  }
+}
+
+.intro .swiper-slide-active {
+  img {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }

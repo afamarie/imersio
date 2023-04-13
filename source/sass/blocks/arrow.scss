@@ -1,0 +1,50 @@
+.arrow {
+  fill: currentColor;
+
+  @include vp-767 {
+    height: 30px;
+  }
+}
+
+.arrow-1 {
+  animation: move-1 1.5s infinite;
+}
+
+.arrow-2 {
+  animation: move-2 1.5s infinite;
+}
+
+.arrow-3 {
+  animation: move-3 1.5s infinite;
+}
+
+
+@keyframes move-1 {
+  0% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-2 {
+  10% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes move-3 {
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}

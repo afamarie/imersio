@@ -1,13 +1,18 @@
 .logo {
   height: 30px;
   width: 113px;
-  transform: translateY(0);
-  transition: transform $trans-600;
+  color: $color-pink-flamingo;
+  transition: color $trans-600;
 
   .is-hidden & {
     transform: translateY(-100%);
   }
+
+  @include hover-focus {
+    color: $color-medium-orchid;
+  }
 }
 
 .logo__icon {
+  fill: currentColor;
 }

@@ -7,7 +7,6 @@
   font-size: 16px;
   line-height: 19px;
   text-transform: uppercase;
-  color: $color-very-light-grey;
 
   @include vp-767 {
     font-weight: 400;
@@ -24,6 +23,12 @@
 
 .nav-list__item {
   margin: auto 8px;
+  color: $color-very-light-grey;
+  transition: color $trans-600;
+
+  @include hover-focus {
+    color: $color-medium-orchid;
+  }
 
   @include vp-767 {
     .header & {
@@ -35,6 +40,3 @@
   }
 }
 
-.nav-list__link {
-
-}
