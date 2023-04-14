@@ -38,33 +38,33 @@
   }
 }
 
-.gallery .swiper {
-  padding-top: 40px;
-  padding-bottom: 25px;
-  background-color: $color-black-russian;
-}
-
-.gallery .swiper-pagination {
-  bottom: 100px;
-  z-index: 1;
-}
-
 .intro .swiper-pagination {
   bottom: -40px;
 
   @include vp-1199 {
-    bottom: -20px;
+    bottom: -10px;
+  }
+
+  @include vp-1199 {
+    bottom: -15px;
   }
 }
 
-.intro .swiper-slide {
+.gallery .swiper-pagination {
+  bottom: 8px;
+  z-index: 1;
+}
+
+.intro .swiper-slide,
+.gallery .swiper-slide {
   img {
     opacity: 0.3;
     transition: all 3s ease-in-out;
   }
 }
 
-.intro .swiper-slide-active {
+.intro .swiper-slide-active,
+.gallery .swiper-slide-active {
   img {
     opacity: 1;
     transform: scale(1.1);
