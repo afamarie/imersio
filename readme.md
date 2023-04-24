@@ -15,7 +15,7 @@ Portfolio website for a creative outsource studio
 
 ## View Deployment
 
-[Sypergym](https://afamarie.github.io/imersio/build/)
+[Imersio](https://afamarie.github.io/imersio/build/)
 
 ## Instruction
 
