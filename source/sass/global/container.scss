@@ -32,7 +32,12 @@
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 50px;
   justify-content: space-between;
+
+  @include vp-1199 {
+    height: 40px;
+  }
 }
 
 .intro .container {

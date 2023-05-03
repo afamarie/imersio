@@ -1,5 +1,6 @@
 import '../../vendor/swiper-bundle.min';
 import Swiper from '../../vendor/swiper-bundle.min';
+import {INTRO_DATA, GALLERY_DATA} from '../../mocks/homepage';
 
 const findSwipers = () => {
   if (document.querySelector('.swiper') !== null) {
@@ -13,45 +14,6 @@ const findSwipers = () => {
 };
 
 /* Hero banner main-page */
-
-const INTRO_DATA = [
-  {
-    id: 'concept',
-    link: '#',
-    title: 'concept art',
-  },
-  {
-    id: 'cover',
-    link: '##',
-    title: 'cover art',
-  },
-  {
-    id: 'assets',
-    link: '###',
-    title: 'game assets',
-  }
-];
-
-const GALLERY_DATA = [
-  {
-    title: 'krastorio',
-    link: '#',
-    category: 'concept art',
-    description: 'Game mod. Over 30 buildings and hundreds of icons',
-  },
-  {
-    title: 'krastorio-2',
-    link: '##',
-    category: 'cover art',
-    description: '":Lsdf lskdf kdj;fldj fksdj;fkldjf ldjf;ldkf ;ldkfj',
-  },
-  {
-    title: 'krastorio-3',
-    link: '###',
-    category: 'game assets',
-    description: 'poioiquweiu ;ldskfjdshf jalsdklm;lk sdfjlfhks fjh kj',
-  }
-];
 
 const swiperIntro = new Swiper('.swiper--intro', {
 
@@ -135,8 +97,6 @@ swiperGallery.on('slideChange', function () {
     description.textContent = GALLERY_DATA[activeSlide.id].description;
   }, 300);
 });
-
-/* Full-page scroll main-page */
 
 findSwipers();
 

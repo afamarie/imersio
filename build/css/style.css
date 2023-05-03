@@ -876,6 +876,7 @@ button,
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 50px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1115,7 +1116,7 @@ button,
 .header__btn::before {
   position: absolute;
   display: inline-block;
-  width: 24px;
+  width: 25px;
   height: 3px;
   left: 6px;
   border-radius: 2px;
@@ -1153,7 +1154,7 @@ button,
 
 .header__btn-burger {
   display: block;
-  width: 24px;
+  width: 25px;
   height: 3px;
   border-radius: 2px;
   opacity: 1;
@@ -1199,8 +1200,6 @@ button,
 }
 
 .logo {
-  height: 30px;
-  width: 113px;
   color: #ff3df7;
   -webkit-transition: color 0.6s ease;
   -o-transition: color 0.6s ease;
@@ -1218,6 +1217,8 @@ button,
 }
 
 .logo__icon {
+  height: 30px;
+  width: 113px;
   fill: currentColor;
 }
 
@@ -1304,6 +1305,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+  align-content: center;
   padding: 0;
   margin: auto 0;
   list-style: none;
@@ -1346,7 +1351,7 @@ button,
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 530px;
+  height: 582px;
 }
 
 .intro__text-pagination {
@@ -1411,6 +1416,10 @@ button,
 
 .intro__list-link.focus-visible:focus {
   color: #cc3dff;
+}
+
+.intro .swiper-pagination {
+  bottom: -40px;
 }
 
 .about {
@@ -1637,6 +1646,32 @@ button,
   background-position-x: 0;
 }
 
+.categories {
+  padding-top: 121px;
+  padding-bottom: 71px;
+}
+
+.categories h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 58px;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.categories__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-left: 0;
+  list-style: none;
+  cursor: pointer;
+}
+
 .swiper-pagination {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1653,7 +1688,7 @@ button,
   display: inline-block;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 3px;
+  margin: 4px;
   width: 12px;
   height: 12px;
   border: 1px solid #ffffff;
@@ -1679,10 +1714,6 @@ button,
   box-shadow: 0 0 0 6px #cc3dff inset;
 }
 
-.intro .swiper-pagination {
-  bottom: -40px;
-}
-
 .gallery .swiper-pagination {
   bottom: 8px;
   z-index: 1;
@@ -1702,6 +1733,10 @@ button,
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+
+.intro .swiper-slide {
+  position: static;
 }
 
 /* @mixin hover-focus {
@@ -1762,12 +1797,25 @@ button,
     line-height: 24px;
   }
 
+  .header .container {
+    height: 40px;
+  }
+
   .about .container {
     gap: 14px;
   }
 
+  .logo__icon {
+    height: 20px;
+    width: 77px;
+  }
+
+  .nav-list {
+    font-size: 14px;
+  }
+
   .intro__list-item img {
-    height: 290px;
+    height: 316px;
   }
 
   .intro__text-pagination {
@@ -1779,6 +1827,10 @@ button,
   .intro__text-pagination p {
     font-size: 36px;
     line-height: 44px;
+  }
+
+  .intro .swiper-pagination {
+    bottom: -10px;
   }
 
   .gallery {
@@ -1825,14 +1877,6 @@ button,
     -webkit-box-shadow: 0 0 0 1px #000000 inset;
     box-shadow: 0 0 0 1px #000000 inset;
   }
-
-  .intro .swiper-pagination {
-    bottom: -10px;
-  }
-
-  .intro .swiper-pagination {
-    bottom: -15px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -1874,6 +1918,9 @@ button,
   .header__btn {
     position: relative;
     display: inline-block;
+    height: 30px;
+    width: 30px;
+    top: -5px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -1908,18 +1955,22 @@ button,
   }
 
   .intro__list-item img {
-    height: 330px;
+    height: 100vh;
   }
 
   .intro__text-pagination {
     padding-left: 14px;
-    bottom: 24px;
+    bottom: 35px;
   }
 
   .intro__text-pagination h2,
   .intro__text-pagination p {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: clamp(30px, 9vw, 48px);
+    line-height: clamp(36px, 11.25vw, 58px);
+  }
+
+  .intro .swiper-pagination {
+    bottom: -20px;
   }
 
   .about {

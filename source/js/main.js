@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Burger} from './modules/header/burger';
 import {StickyHeader} from './modules/header/sticky-header';
+import {Tabs} from './modules/tabs/tabs';
 import './modules/sliders/sliders';
 
 // ---------------------------------
@@ -24,6 +25,8 @@ window.addEventListener('DOMContentLoaded', () => {
     burger.init();
     const header = new StickyHeader();
     header.init();
+    const tabs = new Tabs();
+    window.tabs = tabs;
   });
 });
 

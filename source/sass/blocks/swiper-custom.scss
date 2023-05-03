@@ -9,7 +9,7 @@
 .swiper-pagination-bullet {
   display: inline-block;
   box-sizing: border-box;
-  margin: 3px;
+  margin: 4px;
   width: 12px;
   height: 12px;
   border: 1px solid $color-default-white;
@@ -38,18 +38,6 @@
   }
 }
 
-.intro .swiper-pagination {
-  bottom: -40px;
-
-  @include vp-1199 {
-    bottom: -10px;
-  }
-
-  @include vp-1199 {
-    bottom: -15px;
-  }
-}
-
 .gallery .swiper-pagination {
   bottom: 8px;
   z-index: 1;
@@ -69,4 +57,8 @@
     opacity: 1;
     transform: scale(1.1);
   }
+}
+
+.intro .swiper-slide {
+  position: static;
 }
