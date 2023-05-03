@@ -36,6 +36,7 @@
       </header>
       <main>
         <section class="intro" id="intro">
+          <h1 class="visually-hidden">Imersio Creative Studio</h1>
           <div class="container">
             <div class="swiper swiper--no-js swiper--intro">
               <ul class="intro__list swiper-wrapper">
@@ -70,7 +71,7 @@
                   </picture>
                 </li>
               </ul>
-              <div class="intro__text-pagination" id="intro-info">
+              <div class="intro__text-pagination">
                 <p>we do:</p>
                 <a class="intro__list-link" href="#">
                   <h2>concept art</h2>
@@ -96,9 +97,13 @@
         </section>
         <section class="about" id="about">
           <div class="container">
-            <h2>about us</h2>
+            <h2 class="visually-hidden">who we are</h2>
             <article class="about__details about__details--story">
-              <h3>who we are</h3>
+              <h3>about us</h3>
+              <p>We are a small studio from Kazakhstan and at the moment we provide creative and web-dev outsourcing services work on our own unannounced game project.</p>
+            </article>
+            <article class="about__details about__details--services">
+              <h3>services&nbsp;&&nbsp;prices</h3>
               <p>We are a small studio from Kazakhstan and at the moment we provide creative and web-dev outsourcing services work on our own unannounced game project.</p>
             </article>
             <article class="about__details about__details--contacts">
@@ -113,50 +118,52 @@
         </section>
         <section class="gallery" id="gallery">
           <div class="container">
-            <h2>our gallery</h2>
-            <div class="gallery-wrapper">
-              <div class="swiper swiper--no-js swiper--gallery">
-                <ul class="gallery__list swiper-wrapper">
-                  <li class="gallery__list-item swiper-slide" id="0">
-                    <picture>
-                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/cover.webp, img/gallery-main/cover@2x.webp 2x">
-                      <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/cover_tablet.webp, img/gallery-main/cover_tablet@2x.webp 2x">
-                      <source type="image/webp" srcset="img/gallery-main/cover_mobile.webp 1x, img/gallery-main/cover_mobile@2x.webp 2x">
-                      <source media="(min-width: 1200px)" srcset="img/gallery-main/cover.jpg, img/gallery-main/cover@2x.jpg 2x">
-                      <source media="(min-width: 768px)" srcset="img/gallery-main/cover_tablet.jpg 1x, img/gallery-main/cover_tablet@2x.jpg 2x">
-                      <img src="img/gallery-main/cover_mobile.jpg" srcset="img/gallery-main/cover_mobile@2x.jpg" width="320" height="420" alt="Imersio - cover art" loading="lazy">
-                    </picture>
-                  </li>
-                  <li class="gallery__list-item swiper-slide" id="1">
-                    <img src="img/hero/placeholder-1.jpg.jpg" srcset="img/hero/placeholder-1.jpg" width="320" height="420" alt="Imersio - concept art" loading="lazy">
-                  </li>
-                  <li class="gallery__list-item swiper-slide" id="2">
-                    <img src="img/hero/placeholder-2.jpg.jpg" srcset="img/hero/placeholder-2.jpg" width="320" height="420" alt="Imersio - concept art" loading="lazy">
-                  </li>
-                </ul>
-                <a class="gallery__info-link" href="#" id="gallery-info">
-                  <h3>Krastorio</h3>
-                  <h4>Game assets</h4>
-                  <p>Game mod. Over 30 buildings and hundreds of icons</p>
-                  <svg class="arrow" width="30" height="25" viewbox="0 0 43 36">
-                    <g class="arrow-1">
-                      <path d="M0.101807 2.16499L2.22313 0.0993652L21.0887 18.4696L18.9674 20.5352L0.101807 2.16499Z"/>
-                      <path d="M18.9673 16.5537L21.0887 18.6193L4.02719 35.2328L1.90587 33.1672L18.9673 16.5537Z"/>
-                    </g>
-                    <g class="arrow-2">
-                      <path d="M11 2.06563L13.1213 0L31.9869 18.3703L29.8656 20.4359L11 2.06563Z"/>
-                      <path d="M29.8655 16.4543L31.9868 18.5199L14.9254 35.1335L12.8041 33.0678L29.8655 16.4543Z"/>
-                    </g>
-                    <g class="arrow-3">
-                      <path d="M22 2.06563L24.1213 0L42.9869 18.3703L40.8656 20.4359L22 2.06563Z"/>
-                      <path d="M40.8655 16.4543L42.9868 18.5199L25.9254 35.1335L23.8041 33.0678L40.8655 16.4543Z"/>
-                    </g>
-                  </svg>
-                </a>
-                <div class="swiper-pagination"></div>
-              </div>
-              <a class="gallery__link" href="#">Go to the full gallery</a>
-            </div>
+            <h2 class="visually-hidden">our gallery</h2>
+            <ul class="gallery__list">
+              <li class="gallery__list-item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_racing.webp, img/gallery-main/main-gallery_racing@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_racing_tablet.webp, img/gallery-main/main-gallery_racing_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-main/main-gallery_racing_mobile.webp 1x, img/gallery-main/main-gallery_racing_mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_racing.jpg, img/gallery-main/main-gallery_racing@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_racing_tablet.jpg 1x, img/gallery-main/main-gallery_racing_tablet@2x.jpg 2x">
+                  <img src="img/gallery-main/main-gallery_racing_mobile.jpg" srcset="img/gallery-main/main-gallery_racing_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__list-item">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_warrior.webp, img/gallery-main/main-gallery_warrior@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_warrior_tablet.webp, img/gallery-main/main-gallery_warrior_tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-main/main-gallery_warrior_mobile.webp 1x, img/gallery-main/main-gallery_warrior_mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_warrior.jpg, img/gallery-main/main-gallery_warrior@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_warrior_tablet.jpg 1x, img/gallery-main/main-gallery_warrior_tablet@2x.jpg 2x">
+                  <img src="img/gallery-main/main-gallery_warrior_mobile.jpg" srcset="img/gallery-main/main-gallery_warrior_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__list-item gallery__list-item--hide-tablet">
+                <picture>
+                  <source type="image/webp" srcset="img/gallery-main/main-gallery_tank_mobile.webp, img/gallery-main/main-gallery_tank_mobile@2x.webp 2x">
+                  <img src="img/gallery-main/main-gallery_tank_mobile.jpg" srcset="img/gallery-main/main-gallery_tank_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art">
+                </picture>
+              </li>
+              <li class="gallery__list-item gallery__list-item--hide-mobile">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_trolls.webp, img/gallery-main/main-gallery_trolls@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-main/main-gallery_trolls_tablet.webp, img/gallery-main/main-gallery_trolls_tablet@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_trolls.jpg, img/gallery-main/main-gallery_trolls@2x.jpg 2x">
+                  <img src="img/gallery-main/main-gallery_trolls_tablet.jpg" srcset="img/gallery-main/main-gallery_trolls_tablet@2x.jpg" width="320" height="320" alt="Imersio - cover art" loading="lazy">
+                </picture>
+              </li>
+              <li class="gallery__list-item gallery__list-item--hide-mobile">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_girl.webp, img/gallery-main/main-gallery_girl@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery-main/main-gallery_girl_tablet.webp, img/gallery-main/main-gallery_girl_tablet@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_girl.jpg, img/gallery-main/main-gallery_girl@2x.jpg 2x">
+                  <img src="img/gallery-main/main-gallery_girl_tablet.jpg" srcset="img/gallery-main/main-gallery_girl_tablet@2x.jpg" width="320" height="132" alt="Imersio - cover art">
+                </picture>
+              </li>
+            </ul>
+            <a class="gallery__link" href="#">Go to the full gallery</a>
           </div>
         </section>
       </main>

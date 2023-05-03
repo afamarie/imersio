@@ -17,31 +17,46 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 300;
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 24px;
+    line-height: 29px;
     text-transform: uppercase;
+    text-align: center;
+  }
+
+  h3::after {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 155px;
+    height: 1px;
+    bottom: -10px;
+    background-color: $color-zambezi;
+    content: "";
   }
 
   p {
     font-weight: 300;
     font-size: 15px;
     line-height: 18px;
+    text-align: justify;
   }
 
-  @include vp-767 {
-    padding: 20px 16px;
+  @include vp-1199 {
+    padding: 20px 12px;
 
     h3 {
-      text-align: center;
-      font-size: 16px;
-      line-height: 20px;
+      font-size: 20px;
+      line-height: 24px;
     }
 
     p {
-      text-align: center;
       font-size: 14px;
-      line-height: 19px;
+      line-height: 17px;
     }
+  }
+
+  @include vp-767 {
+    padding: 20px 30px 30px;
   }
 }
 
@@ -96,3 +111,22 @@
   fill: currentcolor;
 }
 
+.about .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 75px;
+
+  @include vp-1200 {
+    padding-left: 220px;
+    padding-right: 220px;
+  }
+
+  @include vp-1199 {
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

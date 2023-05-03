@@ -37,28 +37,3 @@
     }
   }
 }
-
-.gallery .swiper-pagination {
-  bottom: 8px;
-  z-index: 1;
-}
-
-.intro .swiper-slide,
-.gallery .swiper-slide {
-  img {
-    opacity: 0.3;
-    transition: all 3s ease-in-out;
-  }
-}
-
-.intro .swiper-slide-active,
-.gallery .swiper-slide-active {
-  img {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-}
-
-.intro .swiper-slide {
-  position: static;
-}

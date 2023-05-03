@@ -1,8 +1,8 @@
 import '../../vendor/swiper-bundle.min';
 import Swiper from '../../vendor/swiper-bundle.min';
-import {INTRO_DATA, GALLERY_DATA} from '../../mocks/homepage';
+import {INTRO_DATA} from '../../mocks/homepage';
 
-const findSwipers = () => {
+const findSwiper = () => {
   if (document.querySelector('.swiper') !== null) {
     const swipers = document.querySelectorAll('.swiper');
     swipers.forEach((swiper) => {
@@ -40,64 +40,21 @@ const swiperIntro = new Swiper('.swiper--intro', {
   },
 });
 
-const swiper1 = document.querySelector('.swiper--intro');
-const info = swiper1.querySelector('#intro-info');
+const swiper = document.querySelector('.swiper--intro');
+const info = swiper.querySelector('.intro__text-pagination');
 const link = info.querySelector('a');
 const title = info.querySelector('h2');
 
 swiperIntro.on('slideChange', function () {
   title.classList.add('fade');
   setTimeout(() => {
-    const activeSlide = swiper1.querySelector('.swiper-slide-active');
+    const activeSlide = swiper.querySelector('.swiper-slide-active');
     link.href = INTRO_DATA[activeSlide.id].link;
     title.textContent = INTRO_DATA[activeSlide.id].title;
     title.classList.remove('fade');
   }, 300);
 });
 
-/* Gallery banner main-page */
+findSwiper();
 
-const swiperGallery = new Swiper('.swiper--gallery', {
-
-  loop: true,
-  watchSlidesProgress: true,
-  slidesPerView: 1,
-  spaceBetween: 150,
-
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
-
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
-
-  autoHeight: true,
-
-  autoplay: {
-    delay: 3000,
-  },
-});
-
-const swiper2 = document.querySelector('.swiper--gallery');
-const info2 = swiper2.querySelector('#gallery-info');
-const title2 = info2.querySelector('h3');
-const category2 = info2.querySelector('h4');
-const description = info2.querySelector('p');
-
-swiperGallery.on('slideChange', function () {
-  setTimeout(() => {
-    const activeSlide = swiper2.querySelector('.swiper-slide-active');
-    info2.href = GALLERY_DATA[activeSlide.id].link;
-    title2.textContent = GALLERY_DATA[activeSlide.id].title;
-    category2.textContent = GALLERY_DATA[activeSlide.id].category;
-    description.textContent = GALLERY_DATA[activeSlide.id].description;
-  }, 300);
-});
-
-findSwipers();
-
-export {swiperIntro, swiperGallery};
+export {swiperIntro};

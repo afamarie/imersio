@@ -49,23 +49,3 @@
     margin-right: 0;
   }
 }
-
-.about .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0 75px;
-
-  @include vp-1200 {
-    padding-left: 220px;
-    padding-right: 220px;
-  }
-
-  @include vp-1199 {
-    gap: 14px;
-  }
-
-  @include vp-767 {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-}
