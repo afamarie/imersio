@@ -2,8 +2,8 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Burger} from './modules/header/burger';
 import {StickyHeader} from './modules/header/sticky-header';
-import {Tabs} from './modules/tabs/tabs';
 import './modules/sliders/sliders';
+import {initSlider} from './modules/sliders/sliders';
 
 // ---------------------------------
 
@@ -20,13 +20,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
     const burger = new Burger();
     burger.init();
     const header = new StickyHeader();
     header.init();
-    const tabs = new Tabs();
-    window.tabs = tabs;
+    initSlider();
+    initModals();
   });
 });
 

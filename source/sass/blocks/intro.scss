@@ -19,18 +19,20 @@
   img {
     width: 100%;
     object-fit: cover;
+    height: 582px;
   }
 
   @include vp-1199 {
     img {
-      max-height: clamp(316px, 40vw, 582px);
+      height: clamp(316px, 40vw, 582px);
     }
   }
 
   @include vp-767 {
     img {
       height: 100vh;
-      max-height: 100%;
+        /* stylelint-disable-next-line */
+      height: calc(100 * var(--vh, 1vh));
     }
   }
 }
@@ -52,6 +54,7 @@
     font-size: 48px;
     line-height: 58px;
     font-style: normal;
+    text-align: left;
   }
 
   p {

@@ -15,46 +15,48 @@ const findSwiper = () => {
 
 /* Hero banner main-page */
 
-const swiperIntro = new Swiper('.swiper--intro', {
+const initSlider = () => {
+  if (findSwiper()) {
+    const swiperIntro = new Swiper('.swiper--intro', {
 
-  loop: true,
-  watchSlidesProgress: true,
-  slidesPerView: 1,
-  spaceBetween: 150,
+      loop: true,
+      watchSlidesProgress: true,
+      slidesPerView: 1,
+      spaceBetween: 150,
 
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
 
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-    clickable: true,
-  },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+      },
 
-  autoHeight: true,
+      autoHeight: true,
 
-  autoplay: {
-    delay: 3000,
-  },
-});
+      autoplay: {
+        delay: 3000,
+      },
+    });
 
-const swiper = document.querySelector('.swiper--intro');
-const info = swiper.querySelector('.intro__text-pagination');
-const link = info.querySelector('a');
-const title = info.querySelector('h2');
+    const swiper = document.querySelector('.swiper--intro');
+    const info = swiper.querySelector('.intro__text-pagination');
+    const link = info.querySelector('a');
+    const title = info.querySelector('h2');
 
-swiperIntro.on('slideChange', function () {
-  title.classList.add('fade');
-  setTimeout(() => {
-    const activeSlide = swiper.querySelector('.swiper-slide-active');
-    link.href = INTRO_DATA[activeSlide.id].link;
-    title.textContent = INTRO_DATA[activeSlide.id].title;
-    title.classList.remove('fade');
-  }, 300);
-});
+    swiperIntro.on('slideChange', function () {
+      title.classList.add('fade');
+      setTimeout(() => {
+        const activeSlide = swiper.querySelector('.swiper-slide-active');
+        link.href = INTRO_DATA[activeSlide.id].link;
+        title.textContent = INTRO_DATA[activeSlide.id].title;
+        title.classList.remove('fade');
+      }, 300);
+    });
+  }
+};
 
-findSwiper();
-
-export {swiperIntro};
+export {initSlider};
