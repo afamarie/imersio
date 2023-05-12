@@ -2,7 +2,10 @@
 <clipPath id="clip0_443_295">
 <rect width="113" height="30" fill="white"/>
 </clipPath>
-</defs><symbol id="icon-close" viewBox="0 0 20 20"><g fill="none"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></g></symbol><symbol id="Imersio" viewBox="0 0 113 30">
+</defs><symbol id="icon-arrow" viewBox="0 0 12 20">
+<rect x="2.12134" y="7.72485" width="13.8676" height="3" rx="1.5" transform="rotate(45 2.12134 7.72485)"/>
+<rect x="0.00476074" y="9.8269" width="13.8973" height="3" rx="1.5" transform="rotate(-45 0.00476074 9.8269)"/>
+</symbol><symbol id="Imersio" viewBox="0 0 113 30">
 <g clip-path="url(#clip0_443_295)">
 <path d="M7.29039 19.2857H2.43018V-0.142857H7.29039V19.2857Z"/>
 <path d="M10.9355 -0.142857H16.914L21.3811 13.1845L25.7473 -0.142857H31.5915V19.2857H27.6618V5.4812L22.9596 19.2857H19.7017L14.966 5.61754V19.2857H10.9355V-0.142857Z"/>

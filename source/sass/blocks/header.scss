@@ -6,7 +6,7 @@
   background-color: $color-black-russian;
   border-bottom: solid 2px $color-medium-orchid;
   transform: translateY(0);
-  z-index: 2;
+  z-index: 5;
   transition: transform $trans-default;
 
   &.is-hidden {
@@ -75,15 +75,13 @@
 
 .header__btn {
   display: none;
-  transform: translateY(0);
-  transition: transform $trans-600;
 
   @include vp-767 {
     position: relative;
     display: inline-block;
     height: 30px;
     width: 30px;
-    top: -5px;
+    top: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -150,4 +148,12 @@
     z-index: 2;
     transition: all $trans-600;
   }
+}
+
+.header .container {
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  min-height: 50px;
+  justify-content: space-between;
 }

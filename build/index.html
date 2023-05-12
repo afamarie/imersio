@@ -117,10 +117,10 @@
           </div>
         </section>
         <section class="gallery" id="gallery">
-          <div class="container">
+          <div class="container swiper swiper--modal-thumbs">
             <h2 class="visually-hidden">our gallery</h2>
-            <ul class="gallery__list">
-              <li class="gallery__list-item">
+            <ul class="gallery__list swiper-wrapper">
+              <li class="gallery__list-item swiper-slide" data-open-modal="mainpage-gallery">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_racing.webp, img/gallery-main/main-gallery_racing@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_racing_tablet.webp, img/gallery-main/main-gallery_racing_tablet@2x.webp 2x">
@@ -130,7 +130,7 @@
                   <img src="img/gallery-main/main-gallery_racing_mobile.jpg" srcset="img/gallery-main/main-gallery_racing_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
                 </picture>
               </li>
-              <li class="gallery__list-item">
+              <li class="gallery__list-item swiper-slide" data-open-modal="mainpage-gallery">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_warrior.webp, img/gallery-main/main-gallery_warrior@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_warrior_tablet.webp, img/gallery-main/main-gallery_warrior_tablet@2x.webp 2x">
@@ -140,7 +140,7 @@
                   <img src="img/gallery-main/main-gallery_warrior_mobile.jpg" srcset="img/gallery-main/main-gallery_warrior_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
                 </picture>
               </li>
-              <li class="gallery__list-item">
+              <li class="gallery__list-item swiper-slide" data-open-modal="mainpage-gallery">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_trolls.webp, img/gallery-main/main-gallery_trolls@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_trolls_tablet.webp, img/gallery-main/main-gallery_trolls_tablet@2x.webp 2x">
@@ -150,7 +150,7 @@
                   <img src="img/gallery-main/main-gallery_tank_mobile.jpg" srcset="img/gallery-main/main-gallery_tank_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
                 </picture>
               </li>
-              <li class="gallery__list-item gallery__list-item--hide-mobile">
+              <li class="gallery__list-item gallery__list-item--hide-mobile swiper-slide" data-open-modal="mainpage-gallery">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_girl.webp, img/gallery-main/main-gallery_girl@2x.webp 2x">
                   <source type="image/webp" srcset="img/gallery-main/main-gallery_girl_tablet.webp, img/gallery-main/main-gallery_girl_tablet@2x.webp 2x">
@@ -179,30 +179,65 @@
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--preload" data-modal="mainpage-gallery">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
+        <div class="modal__content swiper swiper--modal">
+          <ul class="main-modal-gallery swiper-wrapper">
+            <li class="main-modal-gallery__list-item swiper-slide">
+              <img src="img/gallery-main/d_main_page_gallery_a.jpg" srcset="img/gallery-main/d_main_page_gallery_a@2x.jpg" width="1060" height="1060" alt="Imersio - cover art" loading="lazy">
+              <!-- <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_racing.webp, img/gallery-main/main-gallery_racing@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_racing_tablet.webp, img/gallery-main/main-gallery_racing_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-main/main-gallery_racing_mobile.webp 1x, img/gallery-main/main-gallery_racing_mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_racing.png, img/gallery-main/main-gallery_racing@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_racing_tablet.png 1x, img/gallery-main/main-gallery_racing_png@2x.jpg 2x">
+                <img src="img/gallery-main/main-gallery_racing_mobile.jpg" srcset="img/gallery-main/main-gallery_racing_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
+              </picture> -->
+            </li>
+            <li class="main-modal-gallery__list-item swiper-slide">
+              <img src="img/gallery-main/d_main_page_gallery_b.jpg" srcset="img/gallery-main/d_main_page_gallery_b@2x.jpg" width="1060" height="1060" alt="Imersio - cover art" loading="lazy">
+              <!-- <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_warrior.webp, img/gallery-main/main-gallery_warrior@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_warrior_tablet.webp, img/gallery-main/main-gallery_warrior_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-main/main-gallery_warrior_mobile.webp 1x, img/gallery-main/main-gallery_warrior_mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_warrior.png, img/gallery-main/main-gallery_warrior@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_warrior_tablet.png 1x, img/gallery-main/main-gallery_warrior_tablet@2x.png 2x">
+                <img src="img/gallery-main/main-gallery_warrior_mobile.jpg" srcset="img/gallery-main/main-gallery_warrior_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
+              </picture> -->
+            </li>
+            <li class="main-modal-gallery__list-item swiper-slide">
+              <img src="img/gallery-main/d_main_page_gallery_c.jpg" srcset="img/gallery-main/d_main_page_gallery_c@2x.jpg" width="1060" height="1060" alt="Imersio - cover art" loading="lazy">
+              <!-- <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_trolls.webp, img/gallery-main/main-gallery_trolls@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_trolls_tablet.webp, img/gallery-main/main-gallery_trolls_tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-main/main-gallery_tank_mobile.webp 1x, img/gallery-main/main-gallery_tank_mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_trolls.png, img/gallery-main/main-gallery_trolls@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/gallery-main/main-gallery_trolls_tablet.png 1x, img/gallery-main/main-gallery_trolls_tablet@2x.png 2x">
+                <img src="img/gallery-main/main-gallery_tank_mobile.jpg" srcset="img/gallery-main/main-gallery_tank_mobile@2x.jpg" width="320" height="132" alt="Imersio - cover art" loading="lazy">
+              </picture> -->
+            </li>
+            <li class="main-modal-gallery__list-item main-modal-gallery__list-item--hide-mobile swiper-slide">
+              <img src="img/gallery-main/d_main_page_gallery_d.jpg" srcset="img/gallery-main/d_main_page_gallery_d@2x.jpg" width="1060" height="1060" alt="Imersio - cover art" loading="lazy">
+              <!-- <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_girl.webp, img/gallery-main/main-gallery_girl@2x.webp 2x">
+                <source type="image/webp" srcset="img/gallery-main/main-gallery_girl_tablet.webp, img/gallery-main/main-gallery_girl_tablet@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/gallery-main/main-gallery_girl.png, img/gallery-main/main-gallery_girl@2x.jpg 2x">
+                <img src="img/gallery-main/main-gallery_girl_tablet.png" srcset="img/gallery-main/main-gallery_girl_tablet@2x.png" width="320" height="132" alt="Imersio - cover art" loading="lazy">
+              </picture> -->
+            </li>
+          </ul>
+          <a class="main-modal-gallery__link" href="gallery.html">see full gallery</a>
+          <div class="swiper-button-prev modal__content__button modal__content__button--prev">
+            <svg width="12" height="20">
+              <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
+          </div>
+          <div class="swiper-button-next modal__content__button modal__content__button--next">
+            <svg width="12" height="20">
+              <use xlink:href="img/sprite.svg#icon-arrow"></use>
             </svg>
-          </button>
+          </div>
         </div>
       </div>
     </div>

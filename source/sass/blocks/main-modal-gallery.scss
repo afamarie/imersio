@@ -1,0 +1,59 @@
+.main-modal-gallery {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.main-modal-gallery__link {
+  position: absolute;
+  padding: 10px 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba($color-black-russian, 0.5);
+  transition: background-color $trans-600;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-very-light-grey;
+  z-index: 99;
+
+  @include hover-focus {
+    background-color: rgba($color-medium-orchid, 0.5);
+  }
+}
+
+.modal__content__button {
+  position: absolute;
+  display: flex;
+  margin: auto 0;
+  padding: 10px;
+  width: 40px;
+  height: 44px;
+  top: 0;
+  bottom: 0;
+  background-color: $color-black-russian;
+  cursor: pointer;
+  z-index: 99;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+    transform: scale(-1);
+  }
+
+  svg {
+    fill: $color-very-light-grey;
+    margin: auto;
+  }
+
+  @include hover-focus {
+    background-color: rgba($color-medium-orchid, 0.5);
+  }
+}

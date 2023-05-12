@@ -1,4 +1,6 @@
 .logo {
+  display: flex;
+  align-items: center;
   color: $color-pink-flamingo;
   transition: color $trans-600;
 
@@ -15,9 +17,4 @@
   height: 30px;
   width: 113px;
   fill: currentColor;
-
-  @include vp-1199 {
-    height: 20px;
-    width: 77px;
-  }
 }

@@ -2,12 +2,10 @@ import '../../vendor/swiper-bundle.min';
 import Swiper from '../../vendor/swiper-bundle.min';
 import {INTRO_DATA} from '../../mocks/homepage';
 
-const findSwiper = () => document.querySelector('.swiper') !== null;
-
 /* Hero banner main-page */
 
 const initSlider = () => {
-  if (findSwiper()) {
+  if (document.querySelector('.swiper--intro') !== null) {
     const swiper = document.querySelector('.swiper--intro');
     const info = swiper.querySelector('.intro__text-pagination');
     const link = info.querySelector('a');
@@ -52,4 +50,47 @@ const initSlider = () => {
   }
 };
 
-export {initSlider};
+/* Modal gallery main-page */
+
+const initModalSlider = () => {
+  if (document.querySelector('.swiper--modal') !== null && document.querySelector('.swiper--modal-thumbs') !== null) {
+
+    const modalSliderThumbs = new Swiper('.swiper--modal-thumbs', {
+      grid: {
+        rows: 3,
+      },
+
+      breakpoints: {
+        768: {
+          slidesPerView: 4,
+          grid: {
+            rows: 1,
+          },
+        },
+      },
+    });
+
+    const swiperModal = new Swiper('.swiper--modal', {
+      loop: true,
+      slidesPerView: 1,
+
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+      },
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      thumbs: {
+        swiper: modalSliderThumbs,
+      },
+
+      autoHeight: true,
+    });
+  }
+};
+
+export {initSlider, initModalSlider};
