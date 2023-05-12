@@ -2,21 +2,19 @@ import '../../vendor/swiper-bundle.min';
 import Swiper from '../../vendor/swiper-bundle.min';
 import {INTRO_DATA} from '../../mocks/homepage';
 
-const findSwiper = () => {
-  if (document.querySelector('.swiper') !== null) {
-    const swipers = document.querySelectorAll('.swiper');
-    swipers.forEach((swiper) => {
-      swiper.classList.remove('swiper--no-js');
-    });
-  } else {
-    return;
-  }
-};
+const findSwiper = () => document.querySelector('.swiper') !== null;
 
 /* Hero banner main-page */
 
 const initSlider = () => {
   if (findSwiper()) {
+    const swiper = document.querySelector('.swiper--intro');
+    const info = swiper.querySelector('.intro__text-pagination');
+    const link = info.querySelector('a');
+    const title = info.querySelector('h2');
+
+    swiper.classList.remove('swiper--no-js');
+
     const swiperIntro = new Swiper('.swiper--intro', {
 
       loop: true,
@@ -41,11 +39,6 @@ const initSlider = () => {
         delay: 3000,
       },
     });
-
-    const swiper = document.querySelector('.swiper--intro');
-    const info = swiper.querySelector('.intro__text-pagination');
-    const link = info.querySelector('a');
-    const title = info.querySelector('h2');
 
     swiperIntro.on('slideChange', function () {
       title.classList.add('fade');

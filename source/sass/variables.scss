@@ -21,7 +21,6 @@ $color-zambezi:                     #585858;
 $color-very-light-grey:             #cccccc;
 $color-dark-grey:                   #b2a8a8;
 
-
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -64,3 +63,8 @@ $vp-1920:                           1920px;
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+// Utils
+// ---------------------------------
+
+$count:                             1;

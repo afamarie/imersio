@@ -4,6 +4,8 @@ import {Burger} from './modules/header/burger';
 import {StickyHeader} from './modules/header/sticky-header';
 import './modules/sliders/sliders';
 import {initSlider} from './modules/sliders/sliders';
+import './modules/animation/animation';
+// import {animateChildren} from './modules/animation/animation';
 
 // ---------------------------------
 
@@ -25,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const header = new StickyHeader();
     header.init();
     initSlider();
+    // animateChildren();
     initModals();
   });
 });

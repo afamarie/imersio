@@ -30,7 +30,8 @@
 .gallery__list-item {
   cursor: pointer;
   flex-grow: 1;
-  transition: transform 1.5s ease-in-out 2s;
+  transform: translateX(0);
+  transition: all 0.8s ease-in-out;
 
   &:nth-child(n+2):not(:last-child) {
     margin-left: -180px;
@@ -38,6 +39,28 @@
 
   &:nth-child(n-2):not(:first-child) {
     margin-left: -180px;
+  }
+
+  .gallery__list--hide & {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+
+  .gallery__list--animate & {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  @while $count < 5 {
+    &:nth-child(#{$count}) {
+      z-index: #{$count};
+    }
+
+    .gallery__list--animate &:nth-child(n+#{$count}) {
+      transition-delay: #{1-$count*0.25}s;
+    }
+
+    $count: $count + 1;
   }
 
   img {
@@ -79,6 +102,14 @@
       object-fit: contain;
       border-bottom: 2px solid $color-pink-flamingo;
       box-shadow: inset 4px -4px 4px rgb(0 0 0);
+    }
+
+    @while $count < 5 {
+      .gallery__list--animate &:nth-child(n+#{$count}) {
+        transition-delay: #{$count*0.2}s;
+      }
+
+      $count: $count + 1;
     }
   }
 }
