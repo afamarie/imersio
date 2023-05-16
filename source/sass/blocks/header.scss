@@ -154,6 +154,10 @@
   display: flex;
   padding-top: 6px;
   padding-bottom: 6px;
-  min-height: 50px;
+  min-height: 80px;
   justify-content: space-between;
+
+  @include vp-1919 {
+    min-height: 50px;
+  }
 }

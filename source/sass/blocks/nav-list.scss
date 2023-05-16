@@ -6,9 +6,14 @@
   margin: auto 0;
   list-style: none;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 22px;
+  line-height: 30px;
   text-transform: uppercase;
+
+  @include vp-1919 {
+    font-size: 16px;
+    line-height: 19px;
+  }
 
   @include vp-767 {
     font-weight: 400;
@@ -41,4 +46,3 @@
     }
   }
 }
-

@@ -57,7 +57,7 @@ const initModalSlider = () => {
 
     const modalSliderThumbs = new Swiper('.swiper--modal-thumbs', {
       grid: {
-        rows: 3,
+        rows: 4,
       },
 
       breakpoints: {
