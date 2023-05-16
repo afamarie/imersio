@@ -5,7 +5,7 @@ Portfolio website for a creative outsource studio
 ## Task and functionalities
 - Pure Javascript
 - HTML5, CSS3, progressive improvement
-- Responsive for 3 screen dimensions
+- Responsive for 4 screen dimensions
 - Sass (SCSS) preprocessor
 - Cross-browser and cross-device (Chrome, Firefox, Safari)
 - BEM methodology
