@@ -9,7 +9,6 @@ const initSlider = () => {
     const swiper = document.querySelector('.swiper--intro');
     const info = swiper.querySelector('.intro__text-pagination');
     const link = info.querySelector('a');
-    const title = info.querySelector('h2');
 
     swiper.classList.remove('swiper--no-js');
 
@@ -39,12 +38,12 @@ const initSlider = () => {
     });
 
     swiperIntro.on('slideChange', function () {
-      title.classList.add('fade');
+      info.classList.add('intro__text-pagination--fade');
       setTimeout(() => {
         const activeSlide = swiper.querySelector('.swiper-slide-active');
         link.href = INTRO_DATA[activeSlide.id].link;
-        title.textContent = INTRO_DATA[activeSlide.id].title;
-        title.classList.remove('fade');
+        info.querySelector('h2').textContent = INTRO_DATA[activeSlide.id].title;
+        info.classList.remove('intro__text-pagination--fade');
       }, 300);
     });
   }

@@ -82,7 +82,7 @@
     transition: opacity $trans-default;
   }
 
-  .fade {
+  &--fade > h2 {
     opacity: 0.3;
   }
 
@@ -137,14 +137,12 @@
 
 .intro .swiper:not(.swiper--no-js) .swiper-slide {
   img {
-    opacity: 0.3;
-    transition: all 3s ease-in-out;
+    transition: transform 2s ease-in-out;
   }
 }
 
 .intro .swiper:not(.swiper--no-js) .swiper-slide-active {
   img {
-    opacity: 1;
     transform: scale(1.1);
   }
 }

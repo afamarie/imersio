@@ -853,7 +853,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 2560px;
+  max-width: zpx;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -1347,7 +1347,7 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.intro__text-pagination .fade {
+.intro__text-pagination--fade > h2 {
   opacity: 0.3;
 }
 
@@ -1378,14 +1378,14 @@ button,
 }
 
 .intro .swiper:not(.swiper--no-js) .swiper-slide img {
-  opacity: 0.3;
-  -webkit-transition: all 3s ease-in-out;
-  -o-transition: all 3s ease-in-out;
-  transition: all 3s ease-in-out;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+  transition: -webkit-transform 2s ease-in-out;
+  -o-transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out;
+  transition: transform 2s ease-in-out, -webkit-transform 2s ease-in-out;
 }
 
 .intro .swiper:not(.swiper--no-js) .swiper-slide-active img {
-  opacity: 1;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
