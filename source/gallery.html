@@ -36,29 +36,68 @@
       </header>
       <main>
         <section class="categories">
-          <div class="container">
-            <h1>Our Works</h1>
-            <ul class="categories__list">
-              <li class="categories__item" id="#concept-art">
+          <div class="container categories__swiper swiper swiper--categories swiper--no-js">
+            <!-- <h1>GALLERY</h1> -->
+            <ul class="categories__list swiper-wrapper" >
+              <li class="categories__item swiper-slide" id="#concept-art">
                 <picture>
-                  <source type="image/webp" srcset="img/gallery/categories/concept-art.webp 1x, img/gallery/categories/concept-art@2x.webp 2x">
-                  <img src="img/gallery/categories/concept-art.jpg" srcset="img/gallery/categories/concept-art@2x.jpg" width="320" height="240" alt="Imersio - concept art" loading="lazy">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_conceptart.webp, img/gallery/categories/d_gallery_page_conceptart@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_conceptart.webp, img/gallery/categories/t_gallery_page_conceptart@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/categories/m_gallery_page_conceptart.webp 1x, img/gallery/categories/m_gallery_page_conceptart@2x.webp 2x">
+                  <source media="(min-width: 1920px)" srcset="img/gallery/categories/d_gallery_page_conceptart.jpg, img/gallery/categories/d_gallery_page_conceptart@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_conceptart.jpg, img/gallery/categories/d_gallery_page_conceptart@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_conceptart.jpg 1x, img/gallery/categories/t_gallery_page_conceptart@2x.jpg 2x">
+                  <img src="img/gallery/categories/m_gallery_page_conceptart.jpg" srcset="img/gallery/categories/m_gallery_page_conceptart@2x.jpg" width="320" height="88" alt="Imersio - concept art" loading="lazy">
                 </picture>
-                <p>Concept Art</p>
+                <h2 class="categories__h2">Concept Art</h2>
               </li>
-              <li class="categories__item" id="#cover-art">
+              <li class="categories__item swiper-slide" id="#illustration">
                 <picture>
-                  <source type="image/webp" srcset="img/gallery/categories/cover-art.webp 1x, img/gallery/categories/cover-art@2x.webp 2x">
-                  <img src="img/gallery/categories/cover-art.jpg" srcset="img/gallery/categories/cover-art@2x.jpg" width="320" height="240" alt="Imersio - cover art" loading="lazy">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_illustration.webp, img/gallery/categories/d_gallery_page_illustration@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_illustration.webp, img/gallery/categories/t_gallery_page_illustration@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/categories/m_gallery_page_illustration.webp 1x, img/gallery/categories/m_gallery_page_illustration@2x.webp 2x">
+                  <source media="(min-width: 1920px)" srcset="img/gallery/categories/d_gallery_page_illustration.jpg, img/gallery/categories/d_gallery_page_illustration@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_illustration.jpg, img/gallery/categories/d_gallery_page_illustration@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_illustration.jpg 1x, img/gallery/categories/t_gallery_page_illustration@2x.jpg 2x">
+                  <img src="img/gallery/categories/t_gallery_page_illustration.jpg" srcset="img/gallery/categories/t_gallery_page_illustration@2x.jpg" width="320" height="88" alt="Imersio - illustration" loading="lazy">
                 </picture>
-                <p>Cover Art</p>
+                <h2 class="categories__h2">Illustration</h2>
               </li>
-              <li class="categories__item" id="#game-assets">
+              <li class="categories__item swiper-slide" id="#krastorio-2">
                 <picture>
-                  <source type="image/webp" srcset="img/gallery/categories/game-assetst.webp 1x, img/gallery/categories/game-assets@2x.webp 2x">
-                  <img src="img/gallery/categories/game-assets.jpg" srcset="img/gallery/categories/game-assets@2x.jpg" width="320" height="240" alt="Imersio - game assets" loading="lazy">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_krastorio2.webp, img/gallery/categories/d_gallery_page_krastorio2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_krastorio2.webp, img/gallery/categories/t_gallery_page_krastorio2@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/categories/m_gallery_page_krastorio2.webp 1x, img/gallery/categories/m_gallery_page_krastorio2@2x.webp 2x">
+                  <source media="(min-width: 1920px)" srcset="img/gallery/categories/d_gallery_page_krastorio2.jpg, img/gallery/categories/d_gallery_page_krastorio2@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_krastorio2.jpg, img/gallery/categories/d_gallery_page_krastorio2@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_krastorio2.jpg 1x, img/gallery/categories/t_gallery_page_krastorio2@2x.jpg 2x">
+                  <img src="img/gallery/categories/m_gallery_page_krastorio2.jpg" srcset="img/gallery/categories/m_gallery_page_krastorio2@2x.jpg" width="320" height="88" alt="Imersio - krastorio-2" loading="lazy">
                 </picture>
-                <p>Game Assets</p>
+                <h2 class="categories__h2">Krastorio 2</h2>
+              </li>
+              <li class="categories__item swiper-slide" id="#all-staff">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_all_stuff.webp, img/gallery/categories/d_gallery_page_all_stuff@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_all_stuff.webp, img/gallery/categories/t_gallery_page_all_stuff@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/categories/m_gallery_page_all_stuff.webp 1x, img/gallery/categories/m_gallery_page_all_stuff@2x.webp 2x">
+                  <source media="(min-width: 1920px)" srcset="img/gallery/categories/d_gallery_page_all_stuff.jpg, img/gallery/categories/d_gallery_page_all_stuff@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_all_stuff.jpg, img/gallery/categories/d_gallery_page_all_stuff@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_all_stuff.jpg 1x, img/gallery/categories/t_gallery_page_all_stuff@2x.jpg 2x">
+                  <img src="img/gallery/categories/m_gallery_page_all_stuff.jpg" srcset="img/gallery/categories/m_gallery_page_all_stuff@2x.jpg" width="320" height="88" alt="Imersio - all staff" loading="lazy">
+                </picture>
+                <h2 class="categories__h2">All stuff</h2>
+              </li>
+              <li class="categories__item swiper-slide" id="#aphotic-arts">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_aphotic_arts.webp, img/gallery/categories/d_gallery_page_aphotic_arts@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_aphotic_arts.webp, img/gallery/categories/t_gallery_page_aphotic_arts@2x.webp 2x">
+                  <source type="image/webp" srcset="img/gallery/categories/m_gallery_page_aphotic_arts.webp 1x, img/gallery/categories/m_gallery_page_aphotic_arts@2x.webp 2x">
+                  <source media="(min-width: 1920px)" srcset="img/gallery/categories/d_gallery_page_aphotic_arts.jpg, img/gallery/categories/d_gallery_page_aphotic_arts@2x.jpg 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gallery/categories/d_gallery_page_aphotic_arts.jpg, img/gallery/categories/d_gallery_page_aphotic_arts@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/gallery/categories/t_gallery_page_aphotic_arts.jpg 1x, img/gallery/categories/t_gallery_page_aphotic_arts@2x.jpg 2x">
+                  <img src="img/gallery/categories/m_gallery_page_aphotic_arts.jpg" srcset="img/gallery/categories/m_gallery_page_aphotic_arts@2x.jpg" width="320" height="88" alt="Imersio - Aphotic Arts" loading="lazy">
+                </picture>
+                <h2 class="categories__h2">Aphotic Arts</h2>
               </li>
             </ul>
             <ul class="works">

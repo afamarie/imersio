@@ -6,7 +6,7 @@
   font-display: swap;
   src:
     url("../fonts/Inter-Light.woff2") format("woff2"),
-    url("../fonts/Inter-Light.woff2") format("woff2");
+    url("../fonts/Inter-Light.woff") format("woff");
 }
 
 @font-face {
@@ -17,7 +17,7 @@
   font-display: swap;
   src:
     url("../fonts/Inter-Regular.woff2") format("woff2"),
-    url("../fonts/Inter-Regular.woff2") format("woff2");
+    url("../fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -28,5 +28,16 @@
   font-display: swap;
   src:
     url("../fonts/Inter-SemiBold.woff2") format("woff2"),
-    url("../fonts/Inter-SemiBold.woff2") format("woff2");
+    url("../fonts/Inter-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Impact", "Arial", sans-serif;
+
+  font-display: swap;
+  src:
+    url("../fonts/impact.woff2") format("woff2"),
+    url("../fonts/impact.woff") format("woff");
 }

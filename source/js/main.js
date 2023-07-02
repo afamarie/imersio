@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Burger} from './modules/header/burger';
 import {StickyHeader} from './modules/header/sticky-header';
 import './modules/sliders/sliders';
-import {initSlider, initModalSlider} from './modules/sliders/sliders';
+import {initSlider, initModalSlider, initGallerySlider} from './modules/sliders/sliders';
 import './modules/animation/animation';
 // import {animateChildren} from './modules/animation/animation';
 
@@ -28,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     header.init();
     initSlider();
     initModalSlider();
+    initGallerySlider();
     initModals();
   });
 });
